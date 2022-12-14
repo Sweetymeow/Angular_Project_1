@@ -1,0 +1,10 @@
+button {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #bbb;
+}
+button.active {
+  border: 6px solid #999;
+}

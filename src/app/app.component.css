@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+.page-wrapper {
+  display: grid;
+  grid-template-rows: 2rem 1fr 1.2fr;
+  height: calc(100vh - 1rem);
+}
+.top-section,
+.bottom-section {
+  position: relative;
+  border: 1px solid #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid #eee;
+  width: 80%;
+  height: 100%;
+  display: block;
+}
+.country-list {
+  width: 100%;
+}

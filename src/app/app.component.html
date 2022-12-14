@@ -1,0 +1,22 @@
+<article class="page-wrapper">
+  <header>
+    <img src="/assets/icon.png" alt="SAP" />
+    {{ title }}
+  </header>
+  <app-top-bar
+    class="top-section"
+    [countries]="countries"
+    (onCountryClick)="OnCountryChanges($event)"
+  ></app-top-bar>
+  <section class="bottom-section">
+    <app-country-chart
+      class="container"
+      [countryData]="selectedCountry?.country_data"
+      [countryName]="selectedCountry?.name"
+    ></app-country-chart>
+    <app-country-list
+      class="container"
+      [countryData]="selectedCountry?.country_data"
+    ></app-country-list>
+  </section>
+</article>

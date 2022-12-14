@@ -1,0 +1,9 @@
+<button
+  [ngClass]="{'active': selectedIdx == i}"
+  class="button fancy-button"
+  (click)="onClickCountry(country, i)"
+  *ngFor="let country of countries; let i = index"
+>
+  <p class="material-icons">{{country.name}}</p>
+  <p>{{country.country_data.net_sales}}</p>
+</button>

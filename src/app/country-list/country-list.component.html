@@ -1,0 +1,13 @@
+<header>Best Seller Products</header>
+<table *ngIf="countryData">
+  <tr>
+    <td>Products</td>
+    <td>Units</td>
+    <td>Totals</td>
+  </tr>
+  <tr *ngFor="let sellers of countryData?.best_sellers">
+    <td>{{sellers.name}}</td>
+    <td>{{sellers.units}}</td>
+    <td>{{sellers.total}}</td>
+  </tr>
+</table>
